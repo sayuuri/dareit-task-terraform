@@ -1,3 +1,8 @@
+resource "google_storage_bucket" "terraform_bucket" {
+  name = "terraform_new_bucket"
+  location = "us"
+}
+
 resource "google_compute_instance" "dareit-vm-ci" {
   name         = "dareit-vm-tf-ci"
   machine_type = "e2-medium"
