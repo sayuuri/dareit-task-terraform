@@ -1,13 +1,9 @@
 name: 'Terraform CI'
 
 on:
-  issues:
-    types:
-      - opened
-  pull_request:
+  push:
     branches:
     - main
-    - 'feat/**'
 
 jobs:
   terraform:
